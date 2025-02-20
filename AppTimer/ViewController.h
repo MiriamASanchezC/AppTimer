@@ -8,6 +8,15 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    NSTimer* timer;
+    int counter;
+}
+@property (weak, nonatomic) IBOutlet UILabel *label;
+- (IBAction)startTimer:(id)sender;
+- (IBAction)pauseTimer:(id)sender;
+- (IBAction)restartTimer:(id)sender;
+
 
 
 @end
